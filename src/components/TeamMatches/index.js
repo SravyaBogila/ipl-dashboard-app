@@ -111,7 +111,7 @@ class TeamMatches extends Component {
   }
 
   render() {
-    const {isLpading} = this.state
+    const {isLoading} = this.state
     const className = `team-matches-container ${this.getRouteClassName()}`
 
     return (
