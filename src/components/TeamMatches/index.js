@@ -38,7 +38,7 @@ class TeamMatches extends Component {
     const {params} = match
     const {id} = params
 
-    const response = await fetch(`${teamMatchesApiUrl}${id}`)
+    const response = await fetch(`${teamMatchesApiUrl}/${id}`)
     const fetchedData = await response.json()
     const formattedData = {
       teamBannerURL: fetchedData.team_banner_url,
@@ -83,7 +83,7 @@ class TeamMatches extends Component {
     </div>
   )
 
-  getRouterClassName = () => {
+  getRouteClassName = () => {
     const {match} = this.props
     const {params} = match
     const {id} = params
